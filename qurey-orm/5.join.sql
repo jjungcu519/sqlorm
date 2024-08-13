@@ -36,7 +36,7 @@
 -- 나라별 점수 평균
 -- User.objects.values('country').annotate(Count('id'), Avg('score__value'))
 
-SELECT country,COUNT(*), AVG(value)
-FROM movies_user JOIN movies_score
-ON movies_user.id = movies_score.user_id
-GROUP BY country;
+-- SELECT country,COUNT(*), AVG(value)
+-- FROM movies_user JOIN movies_score
+-- ON movies_user.id = movies_score.user_id
+-- GROUP BY country;
