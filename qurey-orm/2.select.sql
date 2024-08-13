@@ -1,3 +1,10 @@
+SELECT *
+FROM movies_movie JOIN movies_movie_actors
+ON movies_movie.id = movies_movie_actors.movie_id
+JOIN movies_actor
+ON movies_actor.id = movies_movie_actors.actor_id
+WHERE movies_actor.name = 'Robert Thomas';
+
 -- Movie.objects.all()
 -- SELECT * FROM movies_movie;
 
